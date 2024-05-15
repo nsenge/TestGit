@@ -1,0 +1,14 @@
+[project]
+name = "MonProjet"
+version = "1.0.0"
+description = "Description de votre projet"
+[[binaries]]
+name = "mon_projet"
+path = "mon_projet"
+entry_point = "ProjetBDD:mainloop"  # Assurez-vous que c'est le bon point d'entrée pour votre application
+
+[source_crates.my_project]
+path = "."
+
+[[source_crates.my_project.binaries]]
+name = "mon_projet"
